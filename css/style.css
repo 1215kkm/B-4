@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; color: #222;}
+
+.wrap {width: 1200px; height: 700px; margin: 0 auto; border: 1px solid #000;}
+
+header {width: 1200px; height: 100px; background: #33bcb8;}
+.slide {width: 1200px; height: 300px; background: #3e525b; position: relative; overflow: hidden;}
+section {width: 1200px; height: 200px;}
+footer {width: 1200px; height: 100px; background: #459f9c;}
+
+
+/* header */
+header h1 {width: 260px; height: 65px; float: left; margin: 10px;  }
+header h1 img {width: 200px;}
+
+header .gnb {width: 800px; height:60px; float: right;  margin-top: 40px;}
+header .gnb li {width: 200px; height: 60px; line-height: 60px; float: left; text-align: center;}
+header .gnb li a {color: #fff; font-size: 24px; display: block; }
+
+header .gnb li:hover {background: #27525d;}
+
+header .gnb li .lnb {width: 200px; height: 0px; overflow: hidden; position: absolute; transition: 0.3s; z-index: 3;}
+header .gnb:hover li .lnb {height: 240px;}
+
+header .gnb li .lnb li {width: 200px; height: 60px; line-height: 60px;}
+
+header .lnb_bg {width: 1200px; height: 0px; position: absolute; background: #356e7e; top: 100px; transition: 0.3s; z-index: 1;}
+header .gnb:hover ~ .lnb_bg {height: 240px;}
+
+
+/* slide */
+.slide ul {width: 3600px; height: 300px; position: absolute;}
+.slide ul li {width: 1200px; height: 300px; float: left;  }
+
+
+/* section */
+section > div {width: 400px; height: 200px; float: left;}
+section > div.gallery {}
+section > div h2 {width: 100px; height: 35px; }
+section > div ul {width: 400px; height: 160px; }
+
+.notice li {width: 400px; height: 40px; line-height: 40px; border-bottom: 1px solid #ddd;}
+.notice li .title {width: 280px; height: 40px; float: left; }
+.notice li .date {width: 100px; height: 40px; float: right; }
+
+.gallery li {width: 120px; height: 80px; float: left; background: #000; margin:20px 5px 0 5px;}
+.gallery li img {width: 120px;}
+
+.banner li {width: 400px; height: 40px; line-height: 40px; border-bottom: 1px solid #ddd;}
+.banner li img {width: 30px; margin: 5px; float: left;}
+
+.banner li .title {width: 300px; height: 40px; float: left; margin-left: 20px;}
+
+
+/* footer */
+footer .info {width: 800px; height: 100px; float: left; margin-left: 20px;}
+footer .info .menu {width: 800px; height: 40px; line-height: 40px;}
+footer .info .menu a {width: 150px; height: 40px; float: left; color: #fff;}
+footer .copy {color: #fff;}
+
+footer select {width: 200px; height: 50px; float: right; margin: 20px; font-size: 18px;}
+
+
+.popup {width: 400px; height: 300px; background: #04091b; position: absolute; top: 50%; left: 50%; margin-left: -200px; margin-top: -150px; padding: 20px; display: none;}
+.popup h2 {color: #fff; margin-bottom: 20px;}
+.popup div {color: #fff; font-size: 18px;}
+.popup a {position: absolute; right: 20px; bottom: 20px; color: #fff; background: #0868ca; padding: 20px 50px;}
+
+
+
+
+
+
